@@ -2,9 +2,15 @@
 // mobile menu toggle 
 const navbarBurger = document.querySelector(".navbar-burger");
 const navbarMenu = document.querySelector(".navbar-menu");
+const navbarItens = document.querySelectorAll("#nav-links a");
 
 navbarBurger.addEventListener("click", () => {
     navbarMenu.classList.toggle("is-active");
+    navbarItens.forEach(item => {
+        item.addEventListener("click", () => {
+            navbarMenu.classList.remove("is-active");
+        })
+    })
 })
 
 //tabs - está sendo renderizado na função que puxa os items da DB.
