@@ -1,3 +1,40 @@
+
+
 .hero{
     background: url(./assets/hero-img.jpeg) center / cover;
+}
+
+
+.outline{
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.outline:hover{
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: white;
+    transition: all 0.2s;
+}
+
+iframe{
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+@media screen and (max-width:960px){
+    iframe {
+        width: 25em;
+        height: 22em;
+        padding: 1em;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    iframe {
+        width: 19em;
+        height: 15em;
+        padding: 1em;
+    }
 }
